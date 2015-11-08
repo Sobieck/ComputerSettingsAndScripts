@@ -1,6 +1,6 @@
 Function ChocolateyCommands()
 {
-    $command = read-host "List Installed(l), Upgrade(u), Install Chocolatey (install), First Time Setup (ft), Exit(E)"
+    $command = read-host "List Installed(l), Upgrade(u), First Time Setup (ft), Install Chocolatey (install), Exit(E)"
 
     IF($command -eq "u")
     {
