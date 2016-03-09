@@ -1,0 +1,9 @@
+
+".source.r":
+  "function":
+    "prefix": "func"
+    "body": """
+    ${1:description} <- function(${2:variable}) {
+      ${3:code}
+    }
+    """
