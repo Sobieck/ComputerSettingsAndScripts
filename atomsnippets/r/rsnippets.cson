@@ -7,3 +7,21 @@
       ${3:code}
     }
     """
+
+".source.r":
+  "function":
+    "prefix": "readbigtable"
+    "body": """
+    initial <- read.table("${1:filepath}", nrows = 100)
+    classes <- sapply(initial, class)
+    ${2:tableName} <- read.table(${1:filepath}, colClasses = classes)
+    """
+
+".source.r":
+  "function":
+    "prefix": "readbigtable"
+    "body": """
+    initial <- read.table("${1:filepath}", nrows = 100)
+    classes <- sapply(initial, class)
+    ${2:tableName} <- read.table("${1:filepath}", colClasses = classes)
+    """
