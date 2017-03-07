@@ -1,0 +1,1 @@
+Put scdaemon.conf in C:\Users\thoma\AppData\Roaming\gnupg
